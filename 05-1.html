@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인 신청 자료</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        form {
+            width: 50%;
+        }
+        label[for] {
+            display: inline-block;
+            height: 30px;
+        }
+
+        input[type=text], input[type=email]{
+            width: 100%;
+            height: 40px;
+            border: solid 1px orange;
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        input[type=submit], input[type=reset] {
+            background-color: brown;
+            color: white;
+            width: 45%;
+            padding: 10px;
+            border-radius: 10px;
+            border: 0px;
+        }
+
+        #user_birth, #sel_month, #user_day { /*id값을 가져옴*/
+            width: 30%;
+            height: 30px;
+            border-radius: 10px;
+        }
+
+        .box4 {
+            border: solid 1px green;
+            border-radius: 10px;
+            padding: 10px;
+            width: 100%;
+            height: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        textarea {
+            width: 100%;
+            height: 80px;
+            box-sizing: border-box;
+        }
+
+        .box1 {
+            background-color: orange;
+            border-radius: 20px;
+            padding: 5px;
+            text-align: center;
+            box-shadow: 3px 3px 3px black;
+            margin-bottom: 20px;
+        }
+        
+        .box1 h1 {
+            color: white;
+            font-size: 1.8em;
+
+        }
+        
+        .box3 input {
+            margin-bottom: 10px;
+        }
+
+        .box4 input {
+            margin-top: 10px;
+        }
+        
+        
+    </style>
+</head>
+
+
+<body>
+    
+
+    <form name="formPractice" method="post" action="result.html">
+        <!--제목 영역-->
+        <div class="box1">
+            <h1>개인 신청 자료</h1>
+        </div>
+
+        <!--신청 영역-->
+
+        <!--이름 영역-->
+        <div class="box2">
+        <div class="box3">
+            <label for="user_name">성명</label><br>
+            <input type="text" name="user_name" id="user_name" placeholder="input your name" required>
+        </div>
+
+       <!--이메일 내용 영역-->
+       <div class="box3">
+            <label for="user_email">E-mail</label><br>
+            <input type="email" name="user_E-mail"  id="user_E-mail" placeholder="input your e-mail" required>
+       </div>
+
+       <!--생년월일 내용 영역-->
+       <div class="box3">
+            <label for="user_birth">생년월일</label><br>
+            <input type="text" name="user_birth" id="user_birth" placeholder="year" required>
+            <select name="sel_month" id="sel_month">
+                <option value="1">1월</option>
+                <option value="2">2월</option>
+                <option value="3">3월</option>
+                <option value="4" selected>4월</option>
+                <option value="5">5월</option>
+                <option value="6">6월</option>
+                <option value="7">7월</option>
+                <option value="8">8월</option>
+                <option value="9">9월</option>
+                <option value="10">10월</option>
+                <option value="11">11월</option>
+                <option value="12">12월</option>
+
+            </select>
+            <input type="number" name="user_day" id="user_day" placeholder="day">
+       </div>
+
+       <!--성별 영역-->
+       <div class="box3">
+            <label>성별</label>
+            <div class="box4">
+                <input type="radio" name="gender" id="gender_man" value="남자"> <!--name은 그룹을 의미하므로 똑같이 설정-->
+                <label for="gender_man">남&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="radio" name="gender" id="gender_woman" value="여자">
+                <label for="gender_man">여</label>
+            </div>
+       </div>
+
+       <div class="box3"> <!--관심 분야 선택 영역-->
+            <label id="l1">관심분야</label>
+            <div class="box4">
+                <input type="checkbox" name="ch_java" id="ch_java" value="자바" checked><label for="ch_java">JAVA&nbsp;&nbsp;&nbsp;</label>
+
+                <input type="checkbox" name="ch_html" id="ch_html" value="웹제작" checked><label for="ch_html">HTML&nbsp;&nbsp;&nbsp;</label>
+
+                <input type="checkbox" name="ch_python" id="ch_python" value="파이썬">
+                <label for="ch_python">Python&nbsp;&nbsp;&nbsp;</label>
+
+                <input type="checkbox" name="ch_uiux" id="ch_uiux" value="UIUX">
+                <label for="ch_uiux">UI/UX</label>
+            </div>
+       </div>
+
+       <div class="box3"> <!--기타 입력 영역-->
+            <label for="user_content">기타</label>
+            <textarea name="user_content" id="user_content"></textarea>
+       </div>
+       <!--전송 버튼 영역-->
+       <div>
+        <input type="submit" value="제출">
+        <input type="reset" value="취소">
+       </div>
+    </div> <!--box2의 종료-->
+
+    </form>
+</body>
+</html>

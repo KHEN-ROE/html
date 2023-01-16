@@ -1,0 +1,128 @@
+*{
+    font-family: "맑은 고딕";
+}
+
+header, footer{
+    background-color: rgb(94, 169, 164);
+    text-align: center;
+    color: white;
+    padding: 3px;
+    font-size: 20px;
+}
+nav{
+    background-color: rgb(204, 228, 227);
+    font-weight: bold;
+    text-align: center;
+    word-spacing: 40px;
+    padding: 15px;
+    margin-top: 10px;
+}
+#t1{
+    /* border: 2px solid; */
+    border-left: 10px solid;
+    font-size: 20px;
+    padding: 10px;
+    border-color: blue;
+    color: black;
+}
+#t2{
+    /* border: 2px solid; */
+    border-left: 10px solid;
+    font-size: 20px;
+    padding: 10px;
+    border-color:darkcyan;
+    color: black;
+
+}
+#t3{
+    /* border: 2px solid; */
+    border-left: 10px solid;
+    font-size: 20px;
+    padding: 10px;
+    border-color: purple;
+    color: black;
+}
+#t4{
+    /* border: 2px solid; */
+    border-left: 10px solid;
+    font-size: 20px;
+    padding: 10px;
+    border-color: red;
+    color: black;
+}
+#p4{
+    color: green;
+    line-height: 30px;
+    padding-left: 30px;
+}
+li{
+    line-height: 30px;
+}
+#p5{
+    text-align: center;
+}
+img{
+    margin: 20px;
+    border-radius: 200px;
+}
+header > div {
+    float: left;
+}
+header {
+    height: 180px;
+}
+
+nav{
+    clear: both;
+    text-align: left;
+
+}
+section {
+    /* float: left; */ /*float 지정하고 height를 설정해줘야한다. 이때는 300px로 했음*/
+    margin: 10px;
+	padding: 10px;
+	width: 60%;
+	height: auto;
+    border-radius: 10px;
+    border-bottom: 1px dotted;
+}
+#s1 ol{
+    list-style-type: none;
+}
+footer {
+    clear: both;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
+a:active, a:hover {
+    color: aqua;
+}
+li {
+    line-height: 30px;
+}
+
+table {
+    border: solid 1px black;
+    border-collapse: collapse;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    
+    
+}
+
+td, th {
+    border: solid 1px green;
+    padding: 7px;
+    font-size: 16px;
+    font font-family: 맑은 고딕;
+}
+
+thead {
+    background-color: rgb(148, 197, 194);
+}
+caption {
+    margin-bottom: 5px;
+    font-size: 20px;
+}
